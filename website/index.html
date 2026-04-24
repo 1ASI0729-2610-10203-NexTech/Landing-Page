@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BioTrack — Plataforma integral de gestión nutricional para pacientes y organizaciones. Seguimiento en tiempo real, planes personalizados y dashboards corporativos." />
+  <meta name="keywords" content="nutrición, salud, bienestar corporativo, plan nutricional, HealthTech, BioTrack" />
+  <meta property="og:title" content="BioTrack — Gestión Nutricional Inteligente" />
+  <meta property="og:description" content="Conecta pacientes, nutricionistas y organizaciones en una sola plataforma." />
+  <title>BioTrack — Gestión Nutricional Inteligente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css"></head>
+<body>
+
+  <!-- ═══════════════════ NAVBAR ═══════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">
+  <img src="assets/images/Logo.png" alt="BioTrack Logo" class="logo-img">
+</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features">Funciones</a>
+        <a href="#segments">¿Para quién?</a>
+        <a href="#how">¿Cómo funciona?</a>
+        <a href="#pricing">Planes</a>
+        <a href="#testimonials">Testimonios</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#" class="btn-ghost">Iniciar sesión</a>
+        <a href="#pricing" class="btn-primary">Comenzar gratis</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <!-- Texto -->
+      <div class="hero-text" data-reveal>
+        <span class="eyebrow">Plataforma HealthTech #1 en Perú</span>
+        <h1 class="hero-title">
+          Tu salud,<br/>
+          <em>medida con</em><br/>
+          precisión real.
+        </h1>
+        <p class="hero-desc">
+          BioTrack conecta pacientes, nutricionistas y organizaciones en una sola plataforma.
+          Planes nutricionales personalizados, seguimiento continuo y dashboards corporativos
+          basados en datos reales.
+        </p>
+        <div class="hero-actions">
+          <a href="#pricing" class="btn-primary btn-lg">Empieza hoy — es gratis</a>
+          <a href="#how" class="btn-outline btn-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Ver cómo funciona
+          </a>
+        </div>
+        <div class="hero-social-proof">
+          <div class="avatars">
+            <img src="https://i.pravatar.cc/40?img=1"  alt="usuario" loading="lazy"/>
+            <img src="https://i.pravatar.cc/40?img=5"  alt="usuario" loading="lazy"/>
+            <img src="https://i.pravatar.cc/40?img=8"  alt="usuario" loading="lazy"/>
+            <img src="https://i.pravatar.cc/40?img=12" alt="usuario" loading="lazy"/>
+          </div>
+          <p><strong>+2,400</strong> pacientes activos esta semana</p>
+        </div>
+      </div>
+
+      <!-- Mockup dashboard -->
+      <div class="hero-visual" data-reveal data-delay="200">
+        <div class="dashboard-mockup">
+          <div class="mockup-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="mockup-title">Dashboard del Paciente</span>
+          </div>
+          <div class="mockup-body">
+            <!-- Métricas principales -->
+            <div class="metric-row">
+              <div class="metric-card mc-primary">
+                <span class="metric-label">Adherencia semanal</span>
+                <span class="metric-value">87%</span>
+                <div class="metric-bar"><div class="metric-fill" style="width:87%"></div></div>
+              </div>
+              <div class="metric-card">
+                <span class="metric-label">Calorías hoy</span>
+                <span class="metric-value">1,840</span>
+                <span class="metric-sub">/ 2,100 kcal</span>
+              </div>
+            </div>
+            <!-- Mini gráfico -->
+            <div class="chart-preview">
+              <span class="chart-label">Evolución de peso — últimas 8 semanas</span>
+              <svg viewBox="0 0 280 80" class="mini-chart" aria-hidden="true">
+                <defs>
+                  <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%"   stop-color="#10B981" stop-opacity="0.3"/>
+                    <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+                  </linearGradient>
+                </defs>
+                <path d="M0,65 L35,58 L70,52 L105,45 L140,40 L175,33 L210,28 L245,22 L280,18"
+                      stroke="#10B981" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                <path d="M0,65 L35,58 L70,52 L105,45 L140,40 L175,33 L210,28 L245,22 L280,18 L280,80 L0,80 Z"
+                      fill="url(#chartGrad)"/>
+                <circle cx="280" cy="18" r="4" fill="#10B981"/>
+              </svg>
+            </div>
+            <!-- Plan del día -->
+            <div class="plan-preview">
+              <span class="plan-label">Plan de hoy</span>
+              <div class="meal-item">
+                <span class="meal-icon">🌅</span>
+                <div>
+                  <span class="meal-name">Desayuno</span>
+                  <span class="meal-detail">Avena con frutas · 380 kcal</span>
+                </div>
+                <span class="meal-check">✓</span>
+              </div>
+              <div class="meal-item">
+                <span class="meal-icon">☀️</span>
+                <div>
+                  <span class="meal-name">Almuerzo</span>
+                  <span class="meal-detail">Arroz + pollo + ensalada · 620 kcal</span>
+                </div>
+                <span class="meal-check pending">○</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Badges flotantes -->
+        <div class="floating-badge badge-1">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#10B981"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          Plan actualizado
+        </div>
+        <div class="floating-badge badge-2">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#0F4C81"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
+          Meta alcanzada 🎉
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8FAFB"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ LOGOS / CONFIANZA ═══════════════════ -->
+  <section class="trust-band">
+    <div class="container">
+      <p class="trust-label">Confiado por organizaciones líderes</p>
+      <div class="trust-logos">
+        <span class="trust-logo">Clínica San Pablo</span>
+        <span class="trust-logo">Rimac Seguros</span>
+        <span class="trust-logo">Interbank</span>
+        <span class="trust-logo">Universidad UPC</span>
+        <span class="trust-logo">Grupo Falabella</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FEATURES ═══════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Funcionalidades</span>
+        <h2>Todo lo que necesitas,<br/><em>en un solo lugar.</em></h2>
+        <p>Desde el registro de comidas hasta el dashboard corporativo, BioTrack cubre cada etapa del seguimiento nutricional.</p>
+      </div>
+
+      <div class="features-grid">
+
+        <!-- Card grande -->
+        <div class="feature-card fc-large" data-reveal>
+          <div class="feature-icon fi-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
+            </svg>
+          </div>
+          <h3>Planes Nutricionales Personalizados</h3>
+          <p>Tu nutricionista asignado diseña un plan adaptado a tu perfil de salud, objetivos y restricciones alimentarias. Visualízalo día a día en tu Vista de Dieta Semanal.</p>
+          <div class="feature-tag">Para pacientes</div>
+        </div>
+
+        <div class="feature-card" data-reveal data-delay="100">
+          <div class="feature-icon fi-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <h3>Seguimiento en Tiempo Real</h3>
+          <p>Registra tu alimentación, actividad física y peso. El sistema calcula automáticamente tu adherencia al plan.</p>
+          <div class="feature-tag">Para pacientes</div>
+        </div>
+
+        <div class="feature-card" data-reveal data-delay="200">
+          <div class="feature-icon fi-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 21V9"/>
+            </svg>
+          </div>
+          <h3>Dashboard Corporativo Anónimo</h3>
+          <p>Visualiza métricas agregadas de bienestar de tus colaboradores. Datos 100% anonimizados para decisiones informadas.</p>
+          <div class="feature-tag">Para empresas</div>
+        </div>
+
+        <div class="feature-card" data-reveal data-delay="100">
+          <div class="feature-icon fi-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <h3>Gestión de Nutricionistas</h3>
+          <p>Asignación automática de profesionales, evaluaciones de salud y creación de planes en un panel unificado.</p>
+          <div class="feature-tag">Para nutricionistas</div>
+        </div>
+
+        <div class="feature-card" data-reveal data-delay="200">
+          <div class="feature-icon fi-blue">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 20V10M12 20V4M6 20v-6"/>
+            </svg>
+          </div>
+          <h3>Reportes y Gráficos de Evolución</h3>
+          <p>Reportes PDF automáticos con metas alcanzadas, gráficos de progreso y análisis de adherencia al plan.</p>
+          <div class="feature-tag">Para todos</div>
+        </div>
+
+        <div class="feature-card" data-reveal data-delay="300">
+          <div class="feature-icon fi-green">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
+            </svg>
+          </div>
+          <h3>Alertas y Recordatorios</h3>
+          <p>Notificaciones inteligentes para registrar comidas, alertas de bajo cumplimiento al nutricionista y recordatorios de citas.</p>
+          <div class="feature-tag">Para todos</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!-- ═══ TEAM VIDEO ═══ -->
+<section id="team-video" class="team-video-section">
+  <div class="container">
+    <div class="section-header" data-reveal>
+      <span class="section-tag">Nuestro Equipo</span>
+      <h2>Conoce a las personas detrás de <strong>BioTrack</strong></h2>
+      <p>El equipo NexTech te presenta el proyecto y su visión.</p>
+    </div>
+
+    <div class="video-wrapper" data-reveal>
+      <iframe
+        src="https://www.youtube.com/"
+        title="BioTrack — Presentación del equipo NexTech"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+  
+</section>
+  <!-- ═══════════════════ SEGMENTOS ═══════════════════ -->
+  <section class="segments" id="segments">
+    <div class="seg-bg"></div>
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Segmentos</span>
+        <h2>Diseñado para <em>cada uno de ustedes.</em></h2>
+      </div>
+
+      <div class="segments-tabs">
+        <!-- Botones -->
+        <div class="seg-tab-btns">
+          <button class="seg-btn active" data-seg="paciente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+              <circle cx="12" cy="7" r="4"/>
+            </svg>
+            Paciente
+          </button>
+          <button class="seg-btn" data-seg="empresa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2"/>
+              <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
+            </svg>
+            Empresa
+          </button>
+          <button class="seg-btn" data-seg="nutricionista">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+            Nutricionista
+          </button>
+        </div>
+
+        <!-- Panel Paciente -->
+        <div class="seg-panel active" id="seg-paciente">
+          <div class="seg-content">
+            <div class="seg-info">
+              <h3>Para el Paciente</h3>
+              <p>Desde 18 hasta 60+ años. Si quieres mejorar tu alimentación con guía profesional real y seguimiento continuo, BioTrack es para ti.</p>
+              <ul class="seg-benefits">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Plan nutricional personalizado por un profesional
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Registro fácil de comidas y actividad física
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Gráficos de evolución y métricas de progreso
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Consultas de control con recordatorio automático
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Suscripción mensual desde S/ 19.90
+                </li>
+              </ul>
+              <a href="#pricing" class="btn-primary">Ver planes para pacientes →</a>
+            </div>
+            <div class="seg-visual">
+              <div class="persona-card">
+                <img src="https://i.pravatar.cc/80?img=25" alt="Ximena Núñez" class="persona-avatar" loading="lazy"/>
+                <div class="persona-info">
+                  <strong>Ximena Núñez</strong>
+                  <span>24 años · Lima</span>
+                  <span class="persona-quote">"Empiezo bien, pero luego lo dejo. Necesito algo que me mantenga constante."</span>
+                </div>
+              </div>
+              <div class="seg-stats">
+                <div class="stat">
+                  <strong>70%</strong>
+                  <span>de pacientes registran datos 3+ veces por semana</span>
+                </div>
+                <div class="stat">
+                  <strong>65%</strong>
+                  <span>consultan sus gráficos de progreso diariamente</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Empresa -->
+        <div class="seg-panel" id="seg-empresa">
+          <div class="seg-content">
+            <div class="seg-info">
+              <h3>Para la Empresa</h3>
+              <p>Empresas medianas y grandes que buscan mejorar el bienestar de sus colaboradores con datos reales, no suposiciones.</p>
+              <ul class="seg-benefits">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Dashboard corporativo con métricas 100% anónimas
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Onboarding masivo por lista de colaboradores
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Verificación fiscal de la organización
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Reportes de bienestar segmentados por área
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Desde S/ 199/mes · escala con tus colaboradores
+                </li>
+              </ul>
+              <a href="#pricing" class="btn-primary">Ver planes corporativos →</a>
+            </div>
+            <div class="seg-visual">
+              <div class="persona-card">
+                <img src="https://i.pravatar.cc/80?img=11" alt="Eduardo Arévalos" class="persona-avatar" loading="lazy"/>
+                <div class="persona-info">
+                  <strong>Eduardo Arévalos</strong>
+                  <span>36 años · RRHH · Lima</span>
+                  <span class="persona-quote">"Necesito datos reales para justificar el programa de bienestar ante la empresa."</span>
+                </div>
+              </div>
+              <div class="seg-stats">
+                <div class="stat">
+                  <strong>75%</strong>
+                  <span>de organizaciones acceden al dashboard semanalmente</span>
+                </div>
+                <div class="stat">
+                  <strong>100%</strong>
+                  <span>dispuestas a invertir si hay impacto medible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel Nutricionista -->
+        <div class="seg-panel" id="seg-nutricionista">
+          <div class="seg-content">
+            <div class="seg-info">
+              <h3>Para el Nutricionista</h3>
+              <p>Profesionales internos de BioTrack que gestionan pacientes, diseñan planes y hacen seguimiento desde un panel unificado.</p>
+              <ul class="seg-benefits">
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Panel de pacientes asignados con historial completo
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Alertas de bajo cumplimiento en tiempo real
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Creación y gestión de planes nutricionales (CRUD)
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Registro de notas de consulta y seguimiento
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                  Generación de reportes PDF de evolución
+                </li>
+              </ul>
+              <a href="#" class="btn-primary">Únete como nutricionista →</a>
+            </div>
+            <div class="seg-visual">
+              <div class="seg-stats seg-stats-col">
+                <div class="stat">
+                  <strong>100%</strong>
+                  <span>asignación automática de pacientes</span>
+                </div>
+                <div class="stat">
+                  <strong>−40%</strong>
+                  <span>tiempo en gestión administrativa</span>
+                </div>
+                <div class="stat">
+                  <strong>+3x</strong>
+                  <span>más pacientes por nutricionista vs. consulta tradicional</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">¿Cómo funciona?</span>
+        <h2>Empieza a mejorar tu salud<br/><em>en 4 pasos.</em></h2>
+      </div>
+
+      <div class="steps-container">
+
+        <div class="step" data-reveal>
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3>Crea tu cuenta</h3>
+            <p>Regístrate en minutos. El sistema asigna automáticamente tu tipo de cuenta (paciente, admin corporativo o nutricionista) y te envía un correo de verificación.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step" data-reveal data-delay="100">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3>Completa tu perfil de salud</h3>
+            <p>Ingresa tus datos básicos, selecciona tu objetivo nutricional y registra tus restricciones alimentarias. En minutos, un nutricionista es asignado a tu caso.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step" data-reveal data-delay="200">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3>Recibe tu plan personalizado</h3>
+            <p>Tu nutricionista evalúa tu perfil y crea un plan nutricional a tu medida. Lo revisas, lo aceptas y se activa en tu Vista de Dieta Semanal.</p>
+          </div>
+        </div>
+
+        <div class="step-connector"></div>
+
+        <div class="step" data-reveal data-delay="300">
+          <div class="step-number">04</div>
+          <div class="step-content">
+            <h3>Haz seguimiento y evoluciona</h3>
+            <p>Registra tus comidas y actividad física diariamente. Visualiza tu progreso en gráficos, recibe alertas y genera reportes de evolución en PDF.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ STATS ═══════════════════ -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-reveal>
+          <strong class="stat-num" data-count="2400">0</strong>
+          <span>Pacientes activos</span>
+        </div>
+        <div class="stat-item" data-reveal data-delay="100">
+          <strong class="stat-num" data-count="150">0</strong>
+          <span>Organizaciones</span>
+        </div>
+        <div class="stat-item" data-reveal data-delay="200">
+          <strong class="stat-num" data-count="87">0</strong>
+          <span>% adherencia promedio</span>
+        </div>
+        <div class="stat-item" data-reveal data-delay="300">
+          <strong class="stat-num" data-count="98">0</strong>
+          <span>% satisfacción de usuarios</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PRICING ═══════════════════ -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Planes y precios</span>
+        <h2>Invierte en tu salud.<br/><em>Sin sorpresas.</em></h2>
+        <p>Todos los planes incluyen acceso completo a la plataforma. Sin contratos de largo plazo.</p>
+      </div>
+
+      <div class="pricing-toggle" data-reveal>
+        <span class="toggle-label" id="lbl-monthly">Mensual</span>
+        <label class="toggle-switch" aria-label="Cambiar a facturación anual">
+          <input type="checkbox" id="billing-toggle"/>
+          <span class="toggle-slider"></span>
+        </label>
+        <span class="toggle-label" id="lbl-annual">Anual <span class="save-badge">Ahorra 20%</span></span>
+      </div>
+
+      <div class="pricing-grid" data-reveal>
+
+        <!-- Básico -->
+        <div class="price-card">
+          <div class="price-tier">Básico</div>
+          <div class="price-amount">
+            <span class="currency">S/</span>
+            <span class="price-num" data-monthly="19.90" data-annual="15.90">19.90</span>
+            <span class="price-period">/mes</span>
+          </div>
+          <p class="price-desc">Para pacientes que quieren empezar su transformación nutricional.</p>
+          <ul class="price-features">
+            <li>✓ Plan nutricional personalizado</li>
+            <li>✓ Registro de comidas y actividad</li>
+            <li>✓ Gráfico de progreso</li>
+            <li>✓ 1 consulta de control/mes</li>
+            <li class="disabled">✗ Reportes PDF avanzados</li>
+            <li class="disabled">✗ Alertas inteligentes</li>
+          </ul>
+          <a href="#" class="btn-outline-dark">Comenzar con Básico</a>
+        </div>
+
+        <!-- Premium (destacado) -->
+        <div class="price-card price-featured">
+          <div class="featured-badge">Más popular</div>
+          <div class="price-tier">Premium</div>
+          <div class="price-amount">
+            <span class="currency">S/</span>
+            <span class="price-num" data-monthly="39.90" data-annual="31.90">39.90</span>
+            <span class="price-period">/mes</span>
+          </div>
+          <p class="price-desc">Para quienes quieren resultados serios con seguimiento completo.</p>
+          <ul class="price-features">
+            <li>✓ Todo lo del plan Básico</li>
+            <li>✓ Consultas ilimitadas de control</li>
+            <li>✓ Reportes PDF de evolución</li>
+            <li>✓ Alertas de adherencia</li>
+            <li>✓ Recordatorios personalizados</li>
+            <li>✓ Soporte prioritario</li>
+          </ul>
+          <a href="#" class="btn-primary">Empezar con Premium</a>
+        </div>
+
+        <!-- Empresarial -->
+        <div class="price-card">
+          <div class="price-tier">Empresarial</div>
+          <div class="price-amount">
+            <span class="currency">S/</span>
+            <span class="price-num" data-monthly="199" data-annual="159">199</span>
+            <span class="price-period">/mes</span>
+          </div>
+          <p class="price-desc">Para organizaciones que priorizan el bienestar de sus equipos.</p>
+          <ul class="price-features">
+            <li>✓ Onboarding masivo de colaboradores</li>
+            <li>✓ Dashboard corporativo anónimo</li>
+            <li>✓ Métricas de bienestar grupales</li>
+            <li>✓ Facturación corporativa</li>
+            <li>✓ Gestión de licencias</li>
+            <li>✓ Account manager dedicado</li>
+          </ul>
+          <a href="#" class="btn-outline-dark">Contactar ventas</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ TESTIMONIOS ═══════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="testi-bg"></div>
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow">Testimonios</span>
+        <h2>Lo que dicen<br/><em>nuestros usuarios.</em></h2>
+      </div>
+
+      <div class="testi-grid">
+
+        <div class="testi-card" data-reveal>
+          <div class="stars">★★★★★</div>
+          <p>"Llevaba meses intentando seguir una dieta sola y siempre abandonaba. Con BioTrack tengo un plan real hecho por una nutricionista y puedo ver mi progreso cada semana. Bajé 6 kilos en 2 meses."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=25" alt="Catherine Villar" loading="lazy"/>
+            <div>
+              <strong>Catherine V.</strong>
+              <span>Paciente · San Martín de Porres</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card testi-featured" data-reveal data-delay="100">
+          <div class="stars">★★★★★</div>
+          <p>"Como responsable de RRHH, necesitaba datos reales del bienestar de mis 200 colaboradores. El dashboard anónimo de BioTrack me da exactamente lo que necesito para justificar el programa ante la gerencia."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=11" alt="Eduardo Arévalos" loading="lazy"/>
+            <div>
+              <strong>Eduardo A.</strong>
+              <span>Jefe de RRHH · Lima</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card" data-reveal data-delay="200">
+          <div class="stars">★★★★★</div>
+          <p>"La app es intuitiva y el buscador de alimentos funciona bien. Lo mejor es que mi nutricionista me avisa cuando bajo el ritmo. Nunca había tenido ese nivel de seguimiento personalizado."</p>
+          <div class="testi-author">
+            <img src="https://i.pravatar.cc/48?img=15" alt="Gonzalo de la Cruz" loading="lazy"/>
+            <div>
+              <strong>Gonzalo de la Cruz</strong>
+              <span>Paciente · Huaraz</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CTA FINAL ═══════════════════ -->
+  <section class="cta-final">
+    <div class="container">
+      <div class="cta-box" data-reveal>
+        <div class="cta-blob"></div>
+        <h2>¿Listo para tomar<br/><em>el control de tu salud?</em></h2>
+        <p>Únete a más de 2,400 personas que ya gestionan su nutrición con precisión real. Sin excusas, sin complicaciones.</p>
+        <div class="cta-actions">
+          <a href="#pricing" class="btn-white btn-lg">Comenzar ahora — gratis</a>
+          <a href="#" class="btn-ghost-white btn-lg">Hablar con ventas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="logo-icon">
+              <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="17" stroke="#10B981" stroke-width="2"/>
+                <path d="M8 18 Q12 10 18 18 Q24 26 28 18" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+                <circle cx="18" cy="18" r="3" fill="#10B981"/>
+              </svg>
+            </span>
+            <span class="logo-text" style="color:#fff">Bio<strong>Track</strong></span>
+          </a>
+          <p>Plataforma HealthTech para la gestión nutricional de pacientes y organizaciones. Visión: ser líderes regionales en salud preventiva digital.</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="Twitter / X">𝕏</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#features">Funcionalidades</a>
+          <a href="#pricing">Precios</a>
+          <a href="#how">¿Cómo funciona?</a>
+          <a href="#">API para desarrolladores</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Segmentos</h4>
+          <a href="#segments">Para pacientes</a>
+          <a href="#segments">Para empresas</a>
+          <a href="#segments">Para nutricionistas</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <a href="#">Sobre BioTrack</a>
+          <a href="#">Blog de salud</a>
+          <a href="#">Trabaja con nosotros</a>
+          <a href="#">Contacto</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Términos de uso</a>
+          <a href="#">Política de privacidad</a>
+          <a href="#">Política de datos de salud</a>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 BioTrack — NexTech · Universidad Peruana de Ciencias Aplicadas</p>
+        <p>Hecho con ❤️ para mejorar la salud en Perú</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <path d="M18 15l-6-6-6 6"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
