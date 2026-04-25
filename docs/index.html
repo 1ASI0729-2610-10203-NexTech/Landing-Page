@@ -3,34 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="BioTrack — Plataforma integral de gestión nutricional para pacientes y organizaciones. Seguimiento en tiempo real, planes personalizados y dashboards corporativos." />
+
+  <!-- Primary Meta Tags -->
+  <title data-i18n="page-title">BioTrack | Gestión Nutricional Inteligente</title>
+  <meta name="description" data-i18n="meta-description" content="BioTrack — Plataforma integral de gestión nutricional para pacientes y organizaciones. Seguimiento en tiempo real, planes personalizados y dashboards corporativos." />
   <meta name="keywords" content="nutrición, salud, bienestar corporativo, plan nutricional, HealthTech, BioTrack" />
+  <meta name="author" content="Equipo NexTech" />
+  <meta name="theme-color" content="#10B981" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://1asi0729-2610-10203-nextech.github.io/Landing-Page/">
   <meta property="og:title" content="BioTrack — Gestión Nutricional Inteligente" />
   <meta property="og:description" content="Conecta pacientes, nutricionistas y organizaciones en una sola plataforma." />
-  <title>BioTrack — Gestión Nutricional Inteligente</title>
+  <meta property="og:image" content="https://1asi0729-2610-10203-nextech.github.io/Landing-Page/images/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://1asi0729-2610-10203-nextech.github.io/Landing-Page/">
+  <meta property="twitter:title" content="BioTrack | Gestión Nutricional Inteligente" />
+  <meta property="twitter:description" content="Conecta pacientes, nutricionistas y organizaciones en una sola plataforma." />
+  <meta property="twitter:image" content="https://1asi0729-2610-10203-nextech.github.io/Landing-Page/images/og-image.png">
+
+  <!-- PWA & Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="canonical" href="https://1asi0729-2610-10203-nextech.github.io/Landing-Page/" />
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css"></head>
-<body>
 
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ 
   <!-- ═══════════════════ NAVBAR ═══════════════════ -->
   <header class="navbar" id="navbar">
     <div class="nav-inner">
       <a href="#" class="logo">
-  <img src="images/Logo.png" alt="BioTrack Logo" class="logo-img">
-</a>
-      <nav class="nav-links" id="nav-links">
-        <a href="#features">Funciones</a>
-        <a href="#segments">¿Para quién?</a>
-        <a href="#how">¿Cómo funciona?</a>
-        <a href="#pricing">Planes</a>
-        <a href="#testimonials">Testimonios</a>
-      </nav>
+        <img src="images/biotrack-1.png" alt="BioTrack Logo" class="logo-img">
+      </a>
 
-      <div class="nav-cta">
-        <a href="#" class="btn-ghost">Iniciar sesión</a>
-        <a href="#pricing" class="btn-primary">Comenzar gratis</a>
+      <div class="nav-right">
+        <nav class="nav-links" id="nav-links">
+          <a href="#features"     data-i18n="nav-features">Funciones</a>
+          <a href="#segments"     data-i18n="nav-segments">¿Para quién?</a>
+          <a href="#how"          data-i18n="nav-how">¿Cómo funciona?</a>
+          <a href="#pricing"      data-i18n="nav-pricing">Planes</a>
+          <a href="#testimonials" data-i18n="nav-testimonials">Testimonios</a>
+          <a href="#contact"      data-i18n="nav-contact">Contacto</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a href="pages/login.html" class="btn-ghost"   data-i18n="nav-login">Iniciar sesión</a>
+          <a href="pages/signup.html" class="btn-primary" data-i18n="nav-cta">Comenzar gratis</a>
+
+          <!-- Selector de Idioma -->
+          <div class="lang-switcher" role="group" aria-label="Seleccionar idioma">
+            <button class="lang-btn active" data-lang="es" onclick="applyLanguage('es')" aria-label="Español">ES</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" data-lang="en" onclick="applyLanguage('en')" aria-label="English">EN</button>
+          </div>
+        </div>
       </div>
 
       <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
@@ -38,7 +76,7 @@
       </button>
     </div>
   </header>
-
+ 
   <!-- ═══════════════════ HERO ═══════════════════ -->
   <section class="hero" id="hero">
     <div class="hero-bg">
@@ -46,26 +84,26 @@
       <div class="hero-blob blob-2"></div>
       <div class="hero-grid"></div>
     </div>
-
+ 
     <div class="hero-inner container">
       <!-- Texto -->
       <div class="hero-text" data-reveal>
-        <span class="eyebrow">Plataforma HealthTech #1 en Perú</span>
-        <h1 class="hero-title">
+        <span class="eyebrow" data-i18n="hero-eyebrow">Plataforma HealthTech #1 en Perú</span>
+        <h1 class="hero-title" data-i18n="hero-title">
           Tu salud,<br/>
           <em>medida con</em><br/>
           precisión real.
         </h1>
-        <p class="hero-desc">
+        <p class="hero-desc" data-i18n="hero-desc">
           BioTrack conecta pacientes, nutricionistas y organizaciones en una sola plataforma.
           Planes nutricionales personalizados, seguimiento continuo y dashboards corporativos
           basados en datos reales.
         </p>
         <div class="hero-actions">
-          <a href="#pricing" class="btn-primary btn-lg">Empieza hoy — es gratis</a>
+          <a href="pages/signup.html" class="btn-primary btn-lg" data-i18n="hero-btn-primary">Empieza hoy — es gratis</a>
           <a href="#how" class="btn-outline btn-lg">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-            Ver cómo funciona
+            <span data-i18n="hero-btn-secondary">Ver cómo funciona</span>
           </a>
         </div>
         <div class="hero-social-proof">
@@ -75,10 +113,10 @@
             <img src="https://i.pravatar.cc/40?img=8"  alt="usuario" loading="lazy"/>
             <img src="https://i.pravatar.cc/40?img=12" alt="usuario" loading="lazy"/>
           </div>
-          <p><strong>+2,400</strong> pacientes activos esta semana</p>
+          <p><strong>+2,400</strong> <span data-i18n="hero-social-proof">pacientes activos esta semana</span></p>
         </div>
       </div>
-
+ 
       <!-- Mockup dashboard -->
       <div class="hero-visual" data-reveal data-delay="200">
         <div class="dashboard-mockup">
@@ -86,25 +124,25 @@
             <span class="dot red"></span>
             <span class="dot yellow"></span>
             <span class="dot green"></span>
-            <span class="mockup-title">Dashboard del Paciente</span>
+            <span class="mockup-title" data-i18n="mockup-title">Dashboard del Paciente</span>
           </div>
           <div class="mockup-body">
             <!-- Métricas principales -->
             <div class="metric-row">
               <div class="metric-card mc-primary">
-                <span class="metric-label">Adherencia semanal</span>
+                <span class="metric-label" data-i18n="metric-adherencia-label">Adherencia semanal</span>
                 <span class="metric-value">87%</span>
                 <div class="metric-bar"><div class="metric-fill" style="width:87%"></div></div>
               </div>
               <div class="metric-card">
-                <span class="metric-label">Calorías hoy</span>
+                <span class="metric-label" data-i18n="metric-calorias-label">Calorías hoy</span>
                 <span class="metric-value">1,840</span>
-                <span class="metric-sub">/ 2,100 kcal</span>
+                <span class="metric-sub" data-i18n="metric-calorias-sub">/ 2,100 kcal</span>
               </div>
             </div>
             <!-- Mini gráfico -->
             <div class="chart-preview">
-              <span class="chart-label">Evolución de peso — últimas 8 semanas</span>
+              <span class="chart-label" data-i18n="chart-label">Evolución de peso — últimas 8 semanas</span>
               <svg viewBox="0 0 280 80" class="mini-chart" aria-hidden="true">
                 <defs>
                   <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
@@ -121,20 +159,20 @@
             </div>
             <!-- Plan del día -->
             <div class="plan-preview">
-              <span class="plan-label">Plan de hoy</span>
+              <span class="plan-label" data-i18n="plan-label">Plan de hoy</span>
               <div class="meal-item">
                 <span class="meal-icon">🌅</span>
                 <div>
-                  <span class="meal-name">Desayuno</span>
-                  <span class="meal-detail">Avena con frutas · 380 kcal</span>
+                  <span class="meal-name"  data-i18n="meal-breakfast-name">Desayuno</span>
+                  <span class="meal-detail" data-i18n="meal-breakfast-detail">Avena con frutas · 380 kcal</span>
                 </div>
                 <span class="meal-check">✓</span>
               </div>
               <div class="meal-item">
                 <span class="meal-icon">☀️</span>
                 <div>
-                  <span class="meal-name">Almuerzo</span>
-                  <span class="meal-detail">Arroz + pollo + ensalada · 620 kcal</span>
+                  <span class="meal-name"  data-i18n="meal-lunch-name">Almuerzo</span>
+                  <span class="meal-detail" data-i18n="meal-lunch-detail">Arroz + pollo + ensalada · 620 kcal</span>
                 </div>
                 <span class="meal-check pending">○</span>
               </div>
@@ -144,70 +182,84 @@
         <!-- Badges flotantes -->
         <div class="floating-badge badge-1">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#10B981"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          Plan actualizado
+          <span data-i18n="badge-plan">Plan actualizado</span>
         </div>
         <div class="floating-badge badge-2">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#0F4C81"><path d="M12 22c5.52 0 10-4.48 10-10S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10zm-1-15h2v6h-2zm0 8h2v2h-2z"/></svg>
-          Meta alcanzada 🎉
+          <span data-i18n="badge-meta">Meta alcanzada 🎉</span>
         </div>
       </div>
     </div>
-
+ 
     <div class="hero-wave">
       <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
         <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8FAFB"/>
       </svg>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ LOGOS / CONFIANZA ═══════════════════ -->
   <section class="trust-band">
     <div class="container">
-      <p class="trust-label">Confiado por organizaciones líderes</p>
+      <p class="trust-label" data-i18n="trust-label">Confiado por organizaciones líderes</p>
       <div class="trust-logos">
-        <span class="trust-logo">Clínica San Pablo</span>
-        <span class="trust-logo">Rimac Seguros</span>
-        <span class="trust-logo">Interbank</span>
-        <span class="trust-logo">Universidad UPC</span>
-        <span class="trust-logo">Grupo Falabella</span>
+        <div class="trust-logo-item">
+          <img src="images/organizaciones/clinicasanpablo.png" alt="Clínica San Pablo" loading="lazy"/>
+          <span>Clínica San Pablo</span>
+        </div>
+        <div class="trust-logo-item">
+          <img src="images/organizaciones/rimacseguros.png" alt="Rimac Seguros" loading="lazy"/>
+          <span>Rimac Seguros</span>
+        </div>
+        <div class="trust-logo-item">
+          <img src="images/organizaciones/interbank.png" alt="Interbank" loading="lazy"/>
+          <span>Interbank</span>
+        </div>
+        <div class="trust-logo-item">
+          <img src="images/organizaciones/upc.png" alt="Universidad UPC" loading="lazy"/>
+          <span>Universidad UPC</span>
+        </div>
+        <div class="trust-logo-item">
+          <img src="images/organizaciones/grupofalabella.png" alt="Grupo Falabella" loading="lazy"/>
+          <span>Grupo Falabella</span>
+        </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ FEATURES ═══════════════════ -->
   <section class="features" id="features">
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="eyebrow">Funcionalidades</span>
-        <h2>Todo lo que necesitas,<br/><em>en un solo lugar.</em></h2>
-        <p>Desde el registro de comidas hasta el dashboard corporativo, BioTrack cubre cada etapa del seguimiento nutricional.</p>
+        <span class="eyebrow" data-i18n="features-eyebrow">Funcionalidades</span>
+        <h2 data-i18n="features-title">Todo lo que necesitas,<br/><em>en un solo lugar.</em></h2>
+        <p data-i18n="features-desc">Desde el registro de comidas hasta el dashboard corporativo, BioTrack cubre cada etapa del seguimiento nutricional.</p>
       </div>
-
+ 
       <div class="features-grid">
-
-        <!-- Card grande -->
+ 
         <div class="feature-card fc-large" data-reveal>
           <div class="feature-icon fi-blue">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"/>
             </svg>
           </div>
-          <h3>Planes Nutricionales Personalizados</h3>
-          <p>Tu nutricionista asignado diseña un plan adaptado a tu perfil de salud, objetivos y restricciones alimentarias. Visualízalo día a día en tu Vista de Dieta Semanal.</p>
-          <div class="feature-tag">Para pacientes</div>
+          <h3 data-i18n="feat1-title">Planes Nutricionales Personalizados</h3>
+          <p data-i18n="feat1-desc">Tu nutricionista asignado diseña un plan adaptado a tu perfil de salud, objetivos y restricciones alimentarias. Visualízalo día a día en tu Vista de Dieta Semanal.</p>
+          <div class="feature-tag" data-i18n="feat1-tag">Para pacientes</div>
         </div>
-
+ 
         <div class="feature-card" data-reveal data-delay="100">
           <div class="feature-icon fi-green">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
             </svg>
           </div>
-          <h3>Seguimiento en Tiempo Real</h3>
-          <p>Registra tu alimentación, actividad física y peso. El sistema calcula automáticamente tu adherencia al plan.</p>
-          <div class="feature-tag">Para pacientes</div>
+          <h3 data-i18n="feat2-title">Seguimiento en Tiempo Real</h3>
+          <p data-i18n="feat2-desc">Registra tu alimentación, actividad física y peso. El sistema calcula automáticamente tu adherencia al plan.</p>
+          <div class="feature-tag" data-i18n="feat2-tag">Para pacientes</div>
         </div>
-
+ 
         <div class="feature-card" data-reveal data-delay="200">
           <div class="feature-icon fi-blue">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -215,11 +267,11 @@
               <path d="M3 9h18M9 21V9"/>
             </svg>
           </div>
-          <h3>Dashboard Corporativo Anónimo</h3>
-          <p>Visualiza métricas agregadas de bienestar de tus colaboradores. Datos 100% anonimizados para decisiones informadas.</p>
-          <div class="feature-tag">Para empresas</div>
+          <h3 data-i18n="feat3-title">Dashboard Corporativo Anónimo</h3>
+          <p data-i18n="feat3-desc">Visualiza métricas agregadas de bienestar de tus colaboradores. Datos 100% anonimizados para decisiones informadas.</p>
+          <div class="feature-tag" data-i18n="feat3-tag">Para empresas</div>
         </div>
-
+ 
         <div class="feature-card" data-reveal data-delay="100">
           <div class="feature-icon fi-green">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -228,67 +280,66 @@
               <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
             </svg>
           </div>
-          <h3>Gestión de Nutricionistas</h3>
-          <p>Asignación automática de profesionales, evaluaciones de salud y creación de planes en un panel unificado.</p>
-          <div class="feature-tag">Para nutricionistas</div>
+          <h3 data-i18n="feat4-title">Gestión de Nutricionistas</h3>
+          <p data-i18n="feat4-desc">Asignación automática de profesionales, evaluaciones de salud y creación de planes en un panel unificado.</p>
+          <div class="feature-tag" data-i18n="feat4-tag">Para nutricionistas</div>
         </div>
-
+ 
         <div class="feature-card" data-reveal data-delay="200">
           <div class="feature-icon fi-blue">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M18 20V10M12 20V4M6 20v-6"/>
             </svg>
           </div>
-          <h3>Reportes y Gráficos de Evolución</h3>
-          <p>Reportes PDF automáticos con metas alcanzadas, gráficos de progreso y análisis de adherencia al plan.</p>
-          <div class="feature-tag">Para todos</div>
+          <h3 data-i18n="feat5-title">Reportes y Gráficos de Evolución</h3>
+          <p data-i18n="feat5-desc">Reportes PDF automáticos con metas alcanzadas, gráficos de progreso y análisis de adherencia al plan.</p>
+          <div class="feature-tag" data-i18n="feat5-tag">Para todos</div>
         </div>
-
+ 
         <div class="feature-card" data-reveal data-delay="300">
           <div class="feature-icon fi-green">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"/>
             </svg>
           </div>
-          <h3>Alertas y Recordatorios</h3>
-          <p>Notificaciones inteligentes para registrar comidas, alertas de bajo cumplimiento al nutricionista y recordatorios de citas.</p>
-          <div class="feature-tag">Para todos</div>
+          <h3 data-i18n="feat6-title">Alertas y Recordatorios</h3>
+          <p data-i18n="feat6-desc">Notificaciones inteligentes para registrar comidas, alertas de bajo cumplimiento al nutricionista y recordatorios de citas.</p>
+          <div class="feature-tag" data-i18n="feat6-tag">Para todos</div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
-<!-- ═══ TEAM VIDEO ═══ -->
-<section id="team-video" class="team-video-section">
-  <div class="container">
-    <div class="section-header" data-reveal>
-      <span class="section-tag">Nuestro Equipo</span>
-      <h2>Conoce a las personas detrás de <strong>BioTrack</strong></h2>
-      <p>El equipo NexTech te presenta el proyecto y su visión.</p>
+ 
+  <!-- ═══ TEAM VIDEO ═══ -->
+  <section id="team-video" class="team-video-section">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="section-tag" data-i18n="video-eyebrow">Nuestro Equipo</span>
+        <h2 data-i18n="video-title">Conoce a las personas detrás de <strong>BioTrack</strong></h2>
+        <p data-i18n="video-desc">El equipo NexTech te presenta el proyecto y su visión.</p>
+      </div>
+      <div class="video-wrapper" data-reveal>
+        <iframe
+          src="https://www.youtube.com/embed/Nj2XcDcLQQk"
+          title="BioTrack — Presentación del equipo NexTech"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
     </div>
-
-    <div class="video-wrapper" data-reveal>
-      <iframe
-        src="https://www.youtube.com/embed/Nj2XcDcLQQk"
-        title="BioTrack — Presentación del equipo NexTech"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </div>
-  
-</section>
+  </section>
+ 
   <!-- ═══════════════════ SEGMENTOS ═══════════════════ -->
   <section class="segments" id="segments">
     <div class="seg-bg"></div>
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="eyebrow">Segmentos</span>
-        <h2>Diseñado para <em>cada uno de ustedes.</em></h2>
+        <span class="eyebrow" data-i18n="seg-eyebrow">Segmentos</span>
+        <h2 data-i18n="seg-title">Diseñado para <em>cada uno de ustedes.</em></h2>
       </div>
-
+ 
       <div class="segments-tabs">
         <!-- Botones -->
         <div class="seg-tab-btns">
@@ -297,405 +348,438 @@
               <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
               <circle cx="12" cy="7" r="4"/>
             </svg>
-            Paciente
+            <span data-i18n="seg-tab-patient">Paciente</span>
           </button>
           <button class="seg-btn" data-seg="empresa">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <rect x="2" y="7" width="20" height="14" rx="2"/>
               <path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/>
             </svg>
-            Empresa
+            <span data-i18n="seg-tab-company">Empresa</span>
           </button>
           <button class="seg-btn" data-seg="nutricionista">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
             </svg>
-            Nutricionista
+            <span data-i18n="seg-tab-nutritionist">Nutricionista</span>
           </button>
         </div>
-
+ 
         <!-- Panel Paciente -->
         <div class="seg-panel active" id="seg-paciente">
           <div class="seg-content">
             <div class="seg-info">
-              <h3>Para el Paciente</h3>
-              <p>Desde 18 hasta 60+ años. Si quieres mejorar tu alimentación con guía profesional real y seguimiento continuo, BioTrack es para ti.</p>
+              <h3 data-i18n="seg-patient-title">Para el Paciente</h3>
+              <p data-i18n="seg-patient-desc">Desde 18 hasta 60+ años. Si quieres mejorar tu alimentación con guía profesional real y seguimiento continuo, BioTrack es para ti.</p>
               <ul class="seg-benefits">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Plan nutricional personalizado por un profesional
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Registro fácil de comidas y actividad física
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Gráficos de evolución y métricas de progreso
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Consultas de control con recordatorio automático
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Suscripción mensual desde S/ 19.90
-                </li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-patient-b1">Plan nutricional personalizado por un profesional</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-patient-b2">Registro fácil de comidas y actividad física</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-patient-b3">Gráficos de evolución y métricas de progreso</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-patient-b4">Consultas de control con recordatorio automático</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-patient-b5">Suscripción mensual desde S/ 19.90</span></li>
               </ul>
-              <a href="#pricing" class="btn-primary">Ver planes para pacientes →</a>
+              <a href="#pricing" class="btn-primary" data-i18n="seg-patient-cta">Ver planes para pacientes →</a>
             </div>
             <div class="seg-visual">
               <div class="persona-card">
                 <img src="https://i.pravatar.cc/80?img=25" alt="Ximena Núñez" class="persona-avatar" loading="lazy"/>
                 <div class="persona-info">
                   <strong>Ximena Núñez</strong>
-                  <span>24 años · Lima</span>
-                  <span class="persona-quote">"Empiezo bien, pero luego lo dejo. Necesito algo que me mantenga constante."</span>
+                  <span data-i18n="seg-patient-persona-sub">24 años · Lima</span>
+                  <span class="persona-quote" data-i18n="seg-patient-persona-quote">"Empiezo bien, pero luego lo dejo. Necesito algo que me mantenga constante."</span>
                 </div>
               </div>
               <div class="seg-stats">
                 <div class="stat">
                   <strong>70%</strong>
-                  <span>de pacientes registran datos 3+ veces por semana</span>
+                  <span data-i18n="seg-patient-stat1">de pacientes registran datos 3+ veces por semana</span>
                 </div>
                 <div class="stat">
                   <strong>65%</strong>
-                  <span>consultan sus gráficos de progreso diariamente</span>
+                  <span data-i18n="seg-patient-stat2">consultan sus gráficos de progreso diariamente</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+ 
         <!-- Panel Empresa -->
         <div class="seg-panel" id="seg-empresa">
           <div class="seg-content">
             <div class="seg-info">
-              <h3>Para la Empresa</h3>
-              <p>Empresas medianas y grandes que buscan mejorar el bienestar de sus colaboradores con datos reales, no suposiciones.</p>
+              <h3 data-i18n="seg-company-title">Para la Empresa</h3>
+              <p data-i18n="seg-company-desc">Empresas medianas y grandes que buscan mejorar el bienestar de sus colaboradores con datos reales, no suposiciones.</p>
               <ul class="seg-benefits">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Dashboard corporativo con métricas 100% anónimas
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Onboarding masivo por lista de colaboradores
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Verificación fiscal de la organización
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Reportes de bienestar segmentados por área
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Desde S/ 199/mes · escala con tus colaboradores
-                </li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-company-b1">Dashboard corporativo con métricas 100% anónimas</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-company-b2">Onboarding masivo por lista de colaboradores</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-company-b3">Verificación fiscal de la organización</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-company-b4">Reportes de bienestar segmentados por área</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-company-b5">Desde S/ 199/mes · escala con tus colaboradores</span></li>
               </ul>
-              <a href="#pricing" class="btn-primary">Ver planes corporativos →</a>
+              <a href="#pricing" class="btn-primary" data-i18n="seg-company-cta">Ver planes corporativos →</a>
             </div>
             <div class="seg-visual">
               <div class="persona-card">
                 <img src="https://i.pravatar.cc/80?img=11" alt="Eduardo Arévalos" class="persona-avatar" loading="lazy"/>
                 <div class="persona-info">
                   <strong>Eduardo Arévalos</strong>
-                  <span>36 años · RRHH · Lima</span>
-                  <span class="persona-quote">"Necesito datos reales para justificar el programa de bienestar ante la empresa."</span>
+                  <span data-i18n="seg-company-persona-sub">36 años · RRHH · Lima</span>
+                  <span class="persona-quote" data-i18n="seg-company-persona-quote">"Necesito datos reales para justificar el programa de bienestar ante la empresa."</span>
                 </div>
               </div>
               <div class="seg-stats">
                 <div class="stat">
                   <strong>75%</strong>
-                  <span>de organizaciones acceden al dashboard semanalmente</span>
+                  <span data-i18n="seg-company-stat1">de organizaciones acceden al dashboard semanalmente</span>
                 </div>
                 <div class="stat">
                   <strong>100%</strong>
-                  <span>dispuestas a invertir si hay impacto medible</span>
+                  <span data-i18n="seg-company-stat2">dispuestas a invertir si hay impacto medible</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+ 
         <!-- Panel Nutricionista -->
         <div class="seg-panel" id="seg-nutricionista">
           <div class="seg-content">
             <div class="seg-info">
-              <h3>Para el Nutricionista</h3>
-              <p>Profesionales internos de BioTrack que gestionan pacientes, diseñan planes y hacen seguimiento desde un panel unificado.</p>
+              <h3 data-i18n="seg-nutri-title">Para el Nutricionista</h3>
+              <p data-i18n="seg-nutri-desc">Profesionales internos de BioTrack que gestionan pacientes, diseñan planes y hacen seguimiento desde un panel unificado.</p>
               <ul class="seg-benefits">
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Panel de pacientes asignados con historial completo
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Alertas de bajo cumplimiento en tiempo real
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Creación y gestión de planes nutricionales (CRUD)
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Registro de notas de consulta y seguimiento
-                </li>
-                <li>
-                  <svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
-                  Generación de reportes PDF de evolución
-                </li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-nutri-b1">Panel de pacientes asignados con historial completo</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-nutri-b2">Alertas de bajo cumplimiento en tiempo real</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-nutri-b3">Creación y gestión de planes nutricionales (CRUD)</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-nutri-b4">Registro de notas de consulta y seguimiento</span></li>
+                <li><svg viewBox="0 0 24 24" fill="#10B981" width="18" height="18"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg><span data-i18n="seg-nutri-b5">Generación de reportes PDF de evolución</span></li>
               </ul>
-              <a href="#" class="btn-primary">Únete como nutricionista →</a>
+              <a href="#" class="btn-primary" data-i18n="seg-nutri-cta">Únete como nutricionista →</a>
             </div>
             <div class="seg-visual">
               <div class="seg-stats seg-stats-col">
                 <div class="stat">
                   <strong>100%</strong>
-                  <span>asignación automática de pacientes</span>
+                  <span data-i18n="seg-nutri-stat1">asignación automática de pacientes</span>
                 </div>
                 <div class="stat">
                   <strong>−40%</strong>
-                  <span>tiempo en gestión administrativa</span>
+                  <span data-i18n="seg-nutri-stat2">tiempo en gestión administrativa</span>
                 </div>
                 <div class="stat">
                   <strong>+3x</strong>
-                  <span>más pacientes por nutricionista vs. consulta tradicional</span>
+                  <span data-i18n="seg-nutri-stat3">más pacientes por nutricionista vs. consulta tradicional</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ HOW IT WORKS ═══════════════════ -->
   <section class="how" id="how">
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="eyebrow">¿Cómo funciona?</span>
-        <h2>Empieza a mejorar tu salud<br/><em>en 4 pasos.</em></h2>
+        <span class="eyebrow" data-i18n="how-eyebrow">¿Cómo funciona?</span>
+        <h2 data-i18n="how-title">Empieza a mejorar tu salud<br/><em>en 4 pasos.</em></h2>
       </div>
-
+ 
       <div class="steps-container">
-
+ 
         <div class="step" data-reveal>
           <div class="step-number">01</div>
           <div class="step-content">
-            <h3>Crea tu cuenta</h3>
-            <p>Regístrate en minutos. El sistema asigna automáticamente tu tipo de cuenta (paciente, admin corporativo o nutricionista) y te envía un correo de verificación.</p>
+            <h3 data-i18n="step1-title">Crea tu cuenta</h3>
+            <p data-i18n="step1-desc">Regístrate en minutos. El sistema asigna automáticamente tu tipo de cuenta (paciente, admin corporativo o nutricionista) y te envía un correo de verificación.</p>
           </div>
         </div>
-
+ 
         <div class="step-connector"></div>
-
+ 
         <div class="step" data-reveal data-delay="100">
           <div class="step-number">02</div>
           <div class="step-content">
-            <h3>Completa tu perfil de salud</h3>
-            <p>Ingresa tus datos básicos, selecciona tu objetivo nutricional y registra tus restricciones alimentarias. En minutos, un nutricionista es asignado a tu caso.</p>
+            <h3 data-i18n="step2-title">Completa tu perfil de salud</h3>
+            <p data-i18n="step2-desc">Ingresa tus datos básicos, selecciona tu objetivo nutricional y registra tus restricciones alimentarias. En minutos, un nutricionista es asignado a tu caso.</p>
           </div>
         </div>
-
+ 
         <div class="step-connector"></div>
-
+ 
         <div class="step" data-reveal data-delay="200">
           <div class="step-number">03</div>
           <div class="step-content">
-            <h3>Recibe tu plan personalizado</h3>
-            <p>Tu nutricionista evalúa tu perfil y crea un plan nutricional a tu medida. Lo revisas, lo aceptas y se activa en tu Vista de Dieta Semanal.</p>
+            <h3 data-i18n="step3-title">Recibe tu plan personalizado</h3>
+            <p data-i18n="step3-desc">Tu nutricionista evalúa tu perfil y crea un plan nutricional a tu medida. Lo revisas, lo aceptas y se activa en tu Vista de Dieta Semanal.</p>
           </div>
         </div>
-
+ 
         <div class="step-connector"></div>
-
+ 
         <div class="step" data-reveal data-delay="300">
           <div class="step-number">04</div>
           <div class="step-content">
-            <h3>Haz seguimiento y evoluciona</h3>
-            <p>Registra tus comidas y actividad física diariamente. Visualiza tu progreso en gráficos, recibe alertas y genera reportes de evolución en PDF.</p>
+            <h3 data-i18n="step4-title">Haz seguimiento y evoluciona</h3>
+            <p data-i18n="step4-desc">Registra tus comidas y actividad física diariamente. Visualiza tu progreso en gráficos, recibe alertas y genera reportes de evolución en PDF.</p>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ STATS ═══════════════════ -->
   <section class="stats-section">
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item" data-reveal>
           <strong class="stat-num" data-count="2400">0</strong>
-          <span>Pacientes activos</span>
+          <span data-i18n="stat1">Pacientes activos</span>
         </div>
         <div class="stat-item" data-reveal data-delay="100">
           <strong class="stat-num" data-count="150">0</strong>
-          <span>Organizaciones</span>
+          <span data-i18n="stat2">Organizaciones</span>
         </div>
         <div class="stat-item" data-reveal data-delay="200">
           <strong class="stat-num" data-count="87">0</strong>
-          <span>% adherencia promedio</span>
+          <span data-i18n="stat3">% adherencia promedio</span>
         </div>
         <div class="stat-item" data-reveal data-delay="300">
           <strong class="stat-num" data-count="98">0</strong>
-          <span>% satisfacción de usuarios</span>
+          <span data-i18n="stat4">% satisfacción de usuarios</span>
         </div>
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ PRICING ═══════════════════ -->
   <section class="pricing" id="pricing">
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="eyebrow">Planes y precios</span>
-        <h2>Invierte en tu salud.<br/><em>Sin sorpresas.</em></h2>
-        <p>Todos los planes incluyen acceso completo a la plataforma. Sin contratos de largo plazo.</p>
+        <span class="eyebrow" data-i18n="pricing-eyebrow">Planes y precios</span>
+        <h2 data-i18n="pricing-title">Invierte en tu salud.<br/><em>Sin sorpresas.</em></h2>
+        <p data-i18n="pricing-desc">Todos los planes incluyen acceso completo a la plataforma. Sin contratos de largo plazo.</p>
       </div>
-
+ 
       <div class="pricing-toggle" data-reveal>
-        <span class="toggle-label" id="lbl-monthly">Mensual</span>
+        <span class="toggle-label" id="lbl-monthly" data-i18n="pricing-monthly">Mensual</span>
         <label class="toggle-switch" aria-label="Cambiar a facturación anual">
           <input type="checkbox" id="billing-toggle"/>
           <span class="toggle-slider"></span>
         </label>
-        <span class="toggle-label" id="lbl-annual">Anual <span class="save-badge">Ahorra 20%</span></span>
+        <span class="toggle-label" id="lbl-annual">
+          <span data-i18n="pricing-annual">Anual</span>
+          <span class="save-badge" data-i18n="pricing-save">Ahorra 20%</span>
+        </span>
       </div>
-
+ 
       <div class="pricing-grid" data-reveal>
-
+ 
         <!-- Básico -->
         <div class="price-card">
-          <div class="price-tier">Básico</div>
+          <div class="price-tier" data-i18n="plan1-name">Básico</div>
           <div class="price-amount">
             <span class="currency">S/</span>
             <span class="price-num" data-monthly="19.90" data-annual="15.90">19.90</span>
-            <span class="price-period">/mes</span>
+            <span class="price-period" data-i18n="pricing-period">/mes</span>
           </div>
-          <p class="price-desc">Para pacientes que quieren empezar su transformación nutricional.</p>
+          <p class="price-desc" data-i18n="plan1-desc">Para pacientes que quieren empezar su transformación nutricional.</p>
           <ul class="price-features">
-            <li>✓ Plan nutricional personalizado</li>
-            <li>✓ Registro de comidas y actividad</li>
-            <li>✓ Gráfico de progreso</li>
-            <li>✓ 1 consulta de control/mes</li>
-            <li class="disabled">✗ Reportes PDF avanzados</li>
-            <li class="disabled">✗ Alertas inteligentes</li>
+            <li data-i18n="plan1-f1">✓ Plan nutricional personalizado</li>
+            <li data-i18n="plan1-f2">✓ Registro de comidas y actividad</li>
+            <li data-i18n="plan1-f3">✓ Gráfico de progreso</li>
+            <li data-i18n="plan1-f4">✓ 1 consulta de control/mes</li>
+            <li class="disabled" data-i18n="plan1-f5">✗ Reportes PDF avanzados</li>
+            <li class="disabled" data-i18n="plan1-f6">✗ Alertas inteligentes</li>
           </ul>
-          <a href="#" class="btn-outline-dark">Comenzar con Básico</a>
+          <a href="#" class="btn-outline-dark" data-i18n="plan1-cta">Comenzar con Básico</a>
         </div>
-
-        <!-- Premium (destacado) -->
+ 
+        <!-- Premium -->
         <div class="price-card price-featured">
-          <div class="featured-badge">Más popular</div>
-          <div class="price-tier">Premium</div>
+          <div class="featured-badge" data-i18n="plan2-badge">Más popular</div>
+          <div class="price-tier" data-i18n="plan2-name">Premium</div>
           <div class="price-amount">
             <span class="currency">S/</span>
             <span class="price-num" data-monthly="39.90" data-annual="31.90">39.90</span>
-            <span class="price-period">/mes</span>
+            <span class="price-period" data-i18n="pricing-period">/mes</span>
           </div>
-          <p class="price-desc">Para quienes quieren resultados serios con seguimiento completo.</p>
+          <p class="price-desc" data-i18n="plan2-desc">Para quienes quieren resultados serios con seguimiento completo.</p>
           <ul class="price-features">
-            <li>✓ Todo lo del plan Básico</li>
-            <li>✓ Consultas ilimitadas de control</li>
-            <li>✓ Reportes PDF de evolución</li>
-            <li>✓ Alertas de adherencia</li>
-            <li>✓ Recordatorios personalizados</li>
-            <li>✓ Soporte prioritario</li>
+            <li data-i18n="plan2-f1">✓ Todo lo del plan Básico</li>
+            <li data-i18n="plan2-f2">✓ Consultas ilimitadas de control</li>
+            <li data-i18n="plan2-f3">✓ Reportes PDF de evolución</li>
+            <li data-i18n="plan2-f4">✓ Alertas de adherencia</li>
+            <li data-i18n="plan2-f5">✓ Recordatorios personalizados</li>
+            <li data-i18n="plan2-f6">✓ Soporte prioritario</li>
           </ul>
-          <a href="#" class="btn-primary">Empezar con Premium</a>
+          <a href="#" class="btn-primary" data-i18n="plan2-cta">Empezar con Premium</a>
         </div>
-
+ 
         <!-- Empresarial -->
         <div class="price-card">
-          <div class="price-tier">Empresarial</div>
+          <div class="price-tier" data-i18n="plan3-name">Empresarial</div>
           <div class="price-amount">
             <span class="currency">S/</span>
-            <span class="price-num" data-monthly="199" data-annual="159">199</span>
-            <span class="price-period">/mes</span>
+            <span class="price-num" data-monthly="199.90" data-annual="159.90">199.90</span>
+            <span class="price-period" data-i18n="pricing-period">/mes</span>
           </div>
-          <p class="price-desc">Para organizaciones que priorizan el bienestar de sus equipos.</p>
+          <p class="price-desc" data-i18n="plan3-desc">Para organizaciones que priorizan el bienestar de sus equipos.</p>
           <ul class="price-features">
-            <li>✓ Onboarding masivo de colaboradores</li>
-            <li>✓ Dashboard corporativo anónimo</li>
-            <li>✓ Métricas de bienestar grupales</li>
-            <li>✓ Facturación corporativa</li>
-            <li>✓ Gestión de licencias</li>
-            <li>✓ Account manager dedicado</li>
+            <li data-i18n="plan3-f1">✓ Onboarding masivo de colaboradores</li>
+            <li data-i18n="plan3-f2">✓ Dashboard corporativo anónimo</li>
+            <li data-i18n="plan3-f3">✓ Métricas de bienestar grupales</li>
+            <li data-i18n="plan3-f4">✓ Facturación corporativa</li>
+            <li data-i18n="plan3-f5">✓ Gestión de licencias</li>
+            <li data-i18n="plan3-f6">✓ Account manager dedicado</li>
           </ul>
-          <a href="#" class="btn-outline-dark">Contactar ventas</a>
+          <a href="#contact" class="btn-outline-dark" data-i18n="plan3-cta">Contactar ventas</a>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ TESTIMONIOS ═══════════════════ -->
   <section class="testimonials" id="testimonials">
     <div class="testi-bg"></div>
     <div class="container">
       <div class="section-header" data-reveal>
-        <span class="eyebrow">Testimonios</span>
-        <h2>Lo que dicen<br/><em>nuestros usuarios.</em></h2>
+        <span class="eyebrow" data-i18n="testi-eyebrow">Testimonios</span>
+        <h2 data-i18n="testi-title">Lo que dicen<br/><em>nuestros usuarios.</em></h2>
       </div>
-
+ 
       <div class="testi-grid">
-
+ 
         <div class="testi-card" data-reveal>
           <div class="stars">★★★★★</div>
-          <p>"Llevaba meses intentando seguir una dieta sola y siempre abandonaba. Con BioTrack tengo un plan real hecho por una nutricionista y puedo ver mi progreso cada semana. Bajé 6 kilos en 2 meses."</p>
+          <p data-i18n="testi1-text">"Llevaba meses intentando seguir una dieta sola y siempre abandonaba. Con BioTrack tengo un plan real hecho por una nutricionista y puedo ver mi progreso cada semana. Bajé 6 kilos en 2 meses."</p>
           <div class="testi-author">
             <img src="https://i.pravatar.cc/48?img=25" alt="Catherine Villar" loading="lazy"/>
             <div>
               <strong>Catherine V.</strong>
-              <span>Paciente · San Martín de Porres</span>
+              <span data-i18n="testi1-role">Paciente · San Martín de Porres</span>
             </div>
           </div>
         </div>
-
+ 
         <div class="testi-card testi-featured" data-reveal data-delay="100">
           <div class="stars">★★★★★</div>
-          <p>"Como responsable de RRHH, necesitaba datos reales del bienestar de mis 200 colaboradores. El dashboard anónimo de BioTrack me da exactamente lo que necesito para justificar el programa ante la gerencia."</p>
+          <p data-i18n="testi2-text">"Como responsable de RRHH, necesitaba datos reales del bienestar de mis 200 colaboradores. El dashboard anónimo de BioTrack me da exactamente lo que necesito para justificar el programa ante la gerencia."</p>
           <div class="testi-author">
             <img src="https://i.pravatar.cc/48?img=11" alt="Eduardo Arévalos" loading="lazy"/>
             <div>
               <strong>Eduardo A.</strong>
-              <span>Jefe de RRHH · Lima</span>
+              <span data-i18n="testi2-role">Jefe de RRHH · Lima</span>
             </div>
           </div>
         </div>
-
+ 
         <div class="testi-card" data-reveal data-delay="200">
           <div class="stars">★★★★★</div>
-          <p>"La app es intuitiva y el buscador de alimentos funciona bien. Lo mejor es que mi nutricionista me avisa cuando bajo el ritmo. Nunca había tenido ese nivel de seguimiento personalizado."</p>
+          <p data-i18n="testi3-text">"La app es intuitiva y el buscador de alimentos funciona bien. Lo mejor es que mi nutricionista me avisa cuando bajo el ritmo. Nunca había tenido ese nivel de seguimiento personalizado."</p>
           <div class="testi-author">
             <img src="https://i.pravatar.cc/48?img=15" alt="Gonzalo de la Cruz" loading="lazy"/>
             <div>
               <strong>Gonzalo de la Cruz</strong>
-              <span>Paciente · Huaraz</span>
+              <span data-i18n="testi3-role">Paciente · Huaraz</span>
             </div>
           </div>
         </div>
-
+ 
       </div>
     </div>
   </section>
-
+ 
   <!-- ═══════════════════ CTA FINAL ═══════════════════ -->
   <section class="cta-final">
     <div class="container">
       <div class="cta-box" data-reveal>
         <div class="cta-blob"></div>
-        <h2>¿Listo para tomar<br/><em>el control de tu salud?</em></h2>
-        <p>Únete a más de 2,400 personas que ya gestionan su nutrición con precisión real. Sin excusas, sin complicaciones.</p>
+        <h2 data-i18n="cta-title">¿Listo para tomar<br/><em>el control de tu salud?</em></h2>
+        <p data-i18n="cta-desc">Únete a más de 2,400 personas que ya gestionan su nutrición con precisión real. Sin excusas, sin complicaciones.</p>
         <div class="cta-actions">
-          <a href="#pricing" class="btn-white btn-lg">Comenzar ahora — gratis</a>
-          <a href="#" class="btn-ghost-white btn-lg">Hablar con ventas</a>
+          <a href="pages/signup.html" class="btn-white btn-lg" data-i18n="cta-btn-primary">Comenzar ahora - gratis</a>
+          <a href="#contact" class="btn-ghost-white btn-lg" data-i18n="cta-btn-secondary">Hablar con ventas</a>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACTO ═══════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header" data-reveal>
+        <span class="eyebrow" data-i18n="contact-eyebrow">Contacto</span>
+        <h2 data-i18n="contact-title">¿Tienes alguna consulta?<br/><em>Escríbenos.</em></h2>
+        <p data-i18n="contact-desc">Ya seas una empresa, un nutricionista o simplemente tengas una pregunta, estamos aquí. Te respondemos en menos de 24 horas.</p>
+      </div>
+
+      <div class="contact-box" data-reveal>
+
+        <!-- Panel izquierdo -->
+        <div class="contact-info">
+          <h3 data-i18n="contact-info-title">Estamos para ayudarte</h3>
+          <p data-i18n="contact-info-desc">Completa el formulario y un miembro de nuestro equipo se pondrá en contacto contigo a la brevedad.</p>
+
+          <ul class="contact-reasons">
+            <li>
+              <div class="cr-icon" style="background:rgba(255,255,255,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+              </div>
+              <span data-i18n="contact-reason1">Implementar BioTrack en tu empresa</span>
+            </li>
+            <li>
+              <div class="cr-icon" style="background:rgba(255,255,255,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span data-i18n="contact-reason2">Unirte como nutricionista profesional</span>
+            </li>
+            <li>
+              <div class="cr-icon" style="background:rgba(255,255,255,.15)">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+              </div>
+              <span data-i18n="contact-reason3">Resolver alguna duda general</span>
+            </li>
+          </ul>
+
+          <div class="contact-email">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contacto@biotrack.pe">contacto@biotrack.pe</a>
+          </div>
+        </div>
+
+        <!-- Formulario -->
+        <form class="contact-form" novalidate>
+          <div class="cf-row">
+            <div class="cf-group">
+              <label data-i18n="contact-f-name">Nombre completo</label>
+              <input type="text" class="cf-input" data-i18n-placeholder="contact-f-name-ph" placeholder="Ingrese nombre completo" required />
+            </div>
+            <div class="cf-group">
+              <label data-i18n="contact-f-email">Correo electrónico</label>
+              <input type="email" class="cf-input" data-i18n-placeholder="contact-f-email-ph" placeholder="tu@correo.com" required />
+            </div>
+          </div>
+          <div class="cf-group">
+            <label data-i18n="contact-f-type">Motivo de contacto</label>
+            <select class="cf-input cf-select" required>
+              <option value="" disabled selected data-i18n="contact-f-type-placeholder">Selecciona una opción</option>
+              <option data-i18n="contact-f-type-company">Soy una empresa interesada</option>
+              <option data-i18n="contact-f-type-nutri">Soy nutricionista y quiero postular</option>
+              <option data-i18n="contact-f-type-other">Otra consulta</option>
+            </select>
+          </div>
+          <div class="cf-group">
+            <label data-i18n="contact-f-msg">Mensaje</label>
+            <textarea class="cf-textarea" rows="5" data-i18n-placeholder="contact-f-msg-ph" placeholder="Cuéntanos cómo podemos ayudarte..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary contact-btn" data-i18n="contact-f-cta">Enviar mensaje →</button>
+        </form>
+
       </div>
     </div>
   </section>
@@ -704,72 +788,71 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-
+ 
         <div class="footer-brand">
-          <a href="#" class="logo">
-            <span class="logo-icon">
-              <svg width="28" height="28" viewBox="0 0 36 36" fill="none">
-                <circle cx="18" cy="18" r="17" stroke="#10B981" stroke-width="2"/>
-                <path d="M8 18 Q12 10 18 18 Q24 26 28 18" stroke="#fff" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-                <circle cx="18" cy="18" r="3" fill="#10B981"/>
-              </svg>
-            </span>
-            <span class="logo-text" style="color:#fff">Bio<strong>Track</strong></span>
+          <a href="#" class="logo footer-logo">
+            <img src="images/biotrack-2.png" alt="BioTrack" class="footer-logo-img"/>
           </a>
-          <p>Plataforma HealthTech para la gestión nutricional de pacientes y organizaciones. Visión: ser líderes regionales en salud preventiva digital.</p>
+          <p data-i18n="footer-brand-desc">Plataforma HealthTech para la gestión nutricional de pacientes y organizaciones. Visión: ser líderes regionales en salud preventiva digital.</p>
           <div class="footer-socials">
-            <a href="#" aria-label="LinkedIn">in</a>
-            <a href="#" aria-label="Instagram">ig</a>
-            <a href="#" aria-label="Twitter / X">𝕏</a>
+            <a href="#" aria-label="LinkedIn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
           </div>
         </div>
-
+ 
         <div class="footer-col">
-          <h4>Producto</h4>
-          <a href="#features">Funcionalidades</a>
-          <a href="#pricing">Precios</a>
-          <a href="#how">¿Cómo funciona?</a>
-          <a href="#">API para desarrolladores</a>
+          <h4 data-i18n="footer-col1-title">Producto</h4>
+          <a href="#features"  data-i18n="footer-col1-l1">Funcionalidades</a>
+          <a href="#pricing"   data-i18n="footer-col1-l2">Precios</a>
+          <a href="#how"       data-i18n="footer-col1-l3">¿Cómo funciona?</a>
+          <a href="#"          data-i18n="footer-col1-l4">API para desarrolladores</a>
         </div>
-
+ 
         <div class="footer-col">
-          <h4>Segmentos</h4>
-          <a href="#segments">Para pacientes</a>
-          <a href="#segments">Para empresas</a>
-          <a href="#segments">Para nutricionistas</a>
+          <h4 data-i18n="footer-col2-title">Segmentos</h4>
+          <a href="#segments" data-i18n="footer-col2-l1">Para pacientes</a>
+          <a href="#segments" data-i18n="footer-col2-l2">Para empresas</a>
+          <a href="#segments" data-i18n="footer-col2-l3">Para nutricionistas</a>
         </div>
-
+ 
         <div class="footer-col">
-          <h4>Empresa</h4>
-          <a href="#">Sobre BioTrack</a>
-          <a href="#">Blog de salud</a>
-          <a href="#">Trabaja con nosotros</a>
-          <a href="#">Contacto</a>
+          <h4 data-i18n="footer-col3-title">Empresa</h4>
+          <a href="#" data-i18n="footer-col3-l1">Sobre BioTrack</a>
+          <a href="#" data-i18n="footer-col3-l2">Blog de salud</a>
+          <a href="#" data-i18n="footer-col3-l3">Trabaja con nosotros</a>
+          <a href="#" data-i18n="footer-col3-l4">Contacto</a>
         </div>
-
+ 
         <div class="footer-col">
-          <h4>Legal</h4>
-          <a href="#">Términos de uso</a>
-          <a href="#">Política de privacidad</a>
-          <a href="#">Política de datos de salud</a>
+          <h4 data-i18n="footer-col4-title">Legal</h4>
+          <a href="#" data-i18n="footer-col4-l1">Términos de uso</a>
+          <a href="#" data-i18n="footer-col4-l2">Política de privacidad</a>
+          <a href="#" data-i18n="footer-col4-l3">Política de datos de salud</a>
         </div>
-
+ 
       </div>
-
+ 
       <div class="footer-bottom">
-        <p>© 2026 BioTrack — NexTech · Universidad Peruana de Ciencias Aplicadas</p>
-        <p>Hecho con ❤️ para mejorar la salud en Perú</p>
+        <p data-i18n="footer-copy">© 2026 BioTrack — NexTech · Universidad Peruana de Ciencias Aplicadas</p>
       </div>
     </div>
   </footer>
 
-  <!-- Botón volver arriba -->
   <button class="scroll-top" id="scrollTop" aria-label="Volver arriba">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <path d="M18 15l-6-6-6 6"/>
     </svg>
   </button>
 
+  <script src="i18n.js"></script>
   <script src="app.js"></script>
+ 
 </body>
 </html>

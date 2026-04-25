@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="login-page-title">BioTrack | Iniciar sesión</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../styles/styles-login.css" />
+</head>
+<body>
+
+  <!-- Fondo decorativo -->
+  <div class="auth-bg">
+    <div class="auth-blob blob-1"></div>
+    <div class="auth-blob blob-2"></div>
+  </div>
+
+  <!-- Botón volver al inicio -->
+  <a href="../index.html" class="back-btn" aria-label="Volver al inicio">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M19 12H5M12 19l-7-7 7-7"/>
+    </svg>
+    <span data-i18n="auth-back-home">Volver al inicio</span>
+  </a>
+
+  <div class="lang-switcher auth-lang-switcher" role="group" aria-label="Seleccionar idioma">
+    <button class="lang-btn active" data-lang="es" onclick="applyLanguage('es')" aria-label="Español">ES</button>
+    <span class="lang-divider">|</span>
+    <button class="lang-btn" data-lang="en" onclick="applyLanguage('en')" aria-label="English">EN</button>
+  </div>
+
+  <main class="auth-wrapper">
+    <div class="auth-card">
+
+      <!-- Logo -->
+      <div class="auth-logo">
+        <img src="../images/biotrack-1.png" alt="BioTrack" />
+      </div>
+
+      <!-- Encabezado -->
+      <div class="auth-header">
+        <h1><span data-i18n="login-title-main">Bienvenido</span> <em data-i18n="login-title-em">de vuelta</em></h1>
+        <p data-i18n="login-subtitle">Ingresa tus credenciales para acceder a tu cuenta BioTrack.</p>
+      </div>
+
+      <!-- Formulario -->
+      <form novalidate>
+
+        <div class="form-group">
+          <label for="email" data-i18n="auth-email-label">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-input"
+            data-i18n-placeholder="auth-email-ph"
+            placeholder="tu@correo.com"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password" data-i18n="auth-password-label">Contraseña</label>
+          <div class="pwd-wrapper">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input"
+              placeholder="••••••••"
+              autocomplete="current-password"
+              required
+            />
+            <button type="button" class="toggle-pwd" aria-label="Mostrar contraseña" data-i18n-aria-label="auth-show-password">
+              <svg class="eye-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              <svg class="eye-off-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M17.94 17.94A10.07 10.07 0 0112 20c-7 0-11-8-11-8a18.45 18.45 0 015.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0112 4c7 0 11 8 11 8a18.5 18.5 0 01-2.16 3.19"/><line x1="1" y1="1" x2="23" y2="23"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label class="checkbox-label">
+            <input type="checkbox" name="remember" />
+            <span data-i18n="login-remember">Recordarme</span>
+          </label>
+          <a href="#" class="forgot-link" data-i18n="login-forgot">¿Olvidaste tu contraseña?</a>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/>
+          </svg>
+          <span data-i18n="login-submit">Iniciar sesión</span>
+        </button>
+
+      </form>
+
+      <div class="divider" data-i18n="login-divider">o continúa con</div>
+
+      <!-- Google -->
+      <button type="button" class="btn-google">
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/>
+        </svg>
+        <span data-i18n="auth-google">Continuar con Google</span>
+      </button>
+
+      <!-- Pie -->
+      <p class="auth-footer">
+        <span data-i18n="login-no-account">¿No tienes cuenta?</span> <a href="signup.html" data-i18n="login-no-account-link">Regístrate gratis</a>
+      </p>
+
+    </div>
+  </main>
+
+  <script src="../i18n.js"></script>
+  <script>
+    const toggleBtn = document.querySelector('.toggle-pwd');
+    const pwdField  = document.getElementById('password');
+
+    const pwdLabels = {
+      es: { show: 'Mostrar contraseña', hide: 'Ocultar contraseña' },
+      en: { show: 'Show password', hide: 'Hide password' }
+    };
+
+    function syncPwdAriaLabel() {
+      const lang = document.documentElement.lang === 'en' ? 'en' : 'es';
+      const isHidden = pwdField.type === 'password';
+      toggleBtn.setAttribute('aria-label', isHidden ? pwdLabels[lang].show : pwdLabels[lang].hide);
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      const show = pwdField.type === 'password';
+      pwdField.type = show ? 'text' : 'password';
+      toggleBtn.querySelector('.eye-icon').style.display     = show ? 'none' : '';
+      toggleBtn.querySelector('.eye-off-icon').style.display = show ? ''     : 'none';
+      syncPwdAriaLabel();
+    });
+
+    document.addEventListener('biotrack:lang-changed', syncPwdAriaLabel);
+    syncPwdAriaLabel();
+  </script>
+
+</body>
+</html>
