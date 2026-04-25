@@ -124,9 +124,11 @@
       const progress = Math.min(elapsed / duration, 1);
       // ease-out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
-      el.textContent = Math.floor(eased * target).toLocaleString('es-PE');
+      const currentLang = localStorage.getItem('biotrack-lang') || 'es';
+      const locale = currentLang === 'es' ? 'es-PE' : 'en-US';
+      el.textContent = Math.floor(eased * target).toLocaleString(locale);
       if (progress < 1) requestAnimationFrame(update);
-      else el.textContent = target.toLocaleString('es-PE');
+      else el.textContent = target.toLocaleString(locale);
     }
     requestAnimationFrame(update);
   }
